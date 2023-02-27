@@ -246,7 +246,7 @@ footer a {
     color: fuchsia;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (min-width: 576px) {
     nav ul li {
         display: inline;
     }
