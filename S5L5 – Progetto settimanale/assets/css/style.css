@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Spectral&display=swap');
+
+/*Nav*/
+
+header {
+    background-color: #ffc017;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    transition: backgroudColor 1s ease-in ;
+}
+
+header.scrolled{
+    background-color: white;
+    opacity: 0.98;
+}
+
+nav {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9em;
+    padding: 1.2em;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin-right: 3em;
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    margin-right: 2em;
+    cursor: pointer;
+}
+
+.logo {
+    margin-left: 5em;
+    cursor: pointer;
+}
+
+#btn {
+    background-color: black;
+    color: white;
+    width: 8em;
+    padding: 0.8em;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: backgroudColor 1s ease-in ;
+    border: none;
+}
+
+#btn.scrolled{
+    background-color: #1a8917;
+    border: none;
+    opacity: 0.98;
+}
+
+/*Container*/
+
+#main {
+    background-color: #ffc017;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+#main .mainLeft {
+    font-size: 1.5em;
+    display: flex;
+    width: 550px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-left: 5em;
+}
+
+#main .mainLeft h1 {
+    font-family: "Spectral", serif;
+    letter-spacing: -0.06em;
+    font-size: 4.5em;
+    padding-bottom: 0.2em;
+}
+
+#main .mainLeft button {
+    background-color: black;
+    color: white;
+    padding: 0.4em 2.5em;
+    border-radius: 30px;
+    font-size: 0.9em;
+    cursor: pointer;
+    margin-top: 2em;
+    border: none;
+}
+
+#main svg {
+    margin-top: 0;
+    max-width: 50%;
+    max-height: 100%;
+}
+
+/*trending*/
+
+section {
+    border-bottom: 1px solid grey;
+}
+
+.trending {
+    display: flex;
+}
+
+.titleTrending {
+    position: relative;
+    margin: 8%;
+    margin-top: 5em;
+    margin-bottom: -1em;
+}
+
+.titleTrending>p {
+    position: absolute;
+    left: 1em;
+    top: -3em;
+    font-weight: bold;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+}
+
+.logoTrending {
+    margin-right: 10px;
+}
+
+.container {
+    margin-top: 2em;
+    margin-left: -5em; ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.marginCard p {
+    color: rgb(7, 7, 7);
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-weight: bold;
+}
+
+.card {
+    display: flex;
+    margin-bottom: 4em;
+    width: 33%;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.author img {
+    width: 2rem;
+    margin-right: 1rem;
+}
+
+.number {
+    color: rgb(207, 205, 205);
+    font-size: 35px;
+    font-weight: bold;
+    margin-right: 2rem;
+    margin-left: 1em;
+}
+
+h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    color: lightgrey;
+}
+
+/*Article*/
+
+.news {
+    display: flex;
+    justify-content: space-between;
+    padding: 3em;
+}
+
+article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 5em;
+    line-height: 2em;
+    
+}
+
+article div {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+article > img {
+    width: 30%;
+}
+
+.title {
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+
+.preview {
+    font-size: 1em;
+    color: rgb(162, 162, 162);
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+}
+
+.date button {
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(241, 239, 239);
+    color: rgb(162, 162, 162);
+    padding: 0.2em 0.5em;
+    margin-left: 0.2em;
+}
+
+.down {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*Aside*/
+
+aside {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    width: 50%;
+    padding-left: 90px;
+}
+
+aside h2 {
+    font-size: 0.9em;
+    font-weight: bolder;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+.footerButtons {
+    padding-bottom: 2em;
+    border-bottom: 1px solid lightgray;
+}
+
+.footerButtons button {
+    margin-bottom: 0.5em;
+    margin-right: 0.5em;
+    border: 2px solid lightgray;
+    background-color: white;
+    padding: 1em;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: rgb(162, 162, 162);
+    cursor: pointer;
+}
+
+.footerLink {
+    padding-top: 1.5em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footerLink a {
+    font-size: 1em;
+    color: rgb(162, 162, 162);
+    padding-right: 1.5em;
+    padding-bottom: 1.5em;
+    cursor: pointer;
+}
+
+
+/*Versione Tablet*/
+
+@media screen and (min-width: 768px ) and (max-width: 968px) {
+ 
+ nav ul {
+    display: flex;
+    align-items: baseline;
+    width: 50%;
+    font-size: 0.7em;
+    font-weight: 600;
+ }
+
+    .mainLeft h1{
+        font-size: medium;
+    }
+
+ .mainLeft button{
+    margin-bottom: 1em;
+    margin-left: 2em;
+ }
+
+}
+
+/*Versione Mobile*/
+
+@media screen and (min-width: 400px) and (max-width: 767px) {
+    .logo{
+        margin-left:  1em;
+        margin-right: 2.5em;
+    }
+    
+    nav > ul li:nth-child(2),
+    nav > ul li:nth-child(3),
+    nav > ul li:nth-child(1) {
+      display: none;
+    }
+
+
+#main svg {
+    display: none;
+}
+}
